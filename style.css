@@ -25,6 +25,25 @@ body {
     margin-bottom: 5px;
 }
 
+.setupfield {
+    display: flex;
+    flex-direction: column;
+}
+
+.setupfield > div {
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.parametry {
+    display: flex;
+    flex-direction: column;
+}
+
+.parametry>label {
+    margin-bottom: 5px;
+}
+
 datalist {
     display: flex;
     flex-direction: column;

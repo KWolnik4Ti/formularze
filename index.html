@@ -31,16 +31,64 @@
                 </fieldset>
                 <fieldset class="setupfield">
                     <legend>Setup</legend>
-                    <label for="priceId">Wybierz ile mniej więcej chcesz wydać na komputer:</label><br/>
-                    <input type="range" id="priceId" name="price" list="values" />
+                    <div>
+                        <label for="priceId">Wybierz ile mniej więcej chcesz wydać na komputer:</label><br/>
+                        <input type="range" id="priceId" name="price" list="values" />
+                        <datalist id="values">
+                        <option value="1000" label="ok. 1000zl"></option>
+                        <option value="2000" label="ok. 2000zl"></option>
+                        <option value="5000" label="ok. 5000zl"></option>
+                        <option value="8000" label="ok. 8000zl"></option>
+                        <option value="12000" label="ok. 12000zl"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label>
+                            <div>
+                                Do grania:<input type="checkbox" value="granie" >
+                            </div>
+                            <div>
+                                Do pracy:<input type="checkbox" value="praca">
+                            </div>
+                            <div>
+                                Surfing: <input type="checkbox" value="Surfing">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="parametry">
+                        <h2 style="margin: 1px;">Komponenty komputera:</h2>
+                        <label for="box">Wybierz obudowę: 
+                            <select name="boxtype" id="box">
+                                <option value="1">box 1</option>
+                                <option value="2">box 2</option>
+                                <option value="3">box 3</option>
+                                <option value="4">box 4</option>
+                                <option value="5">box 5</option>
+                            </select>
+                        </label>
+                        <label for="motherboard">Wybierz plyte glowna: 
+                            <select name="boardtype" id="motherboard">
+                                <option value="6">plyta 1</option>
+                                <option value="7">plyta 2</option>
+                                <option value="8">plyta 3</option>
+                                <option value="9">plyta 4</option>
+                                <option value="10">plyta 5</option>
+                            </select>
+                        </label>
 
-                    <datalist id="values">
-                    <option value="1000" label="ok. 1000zl"></option>
-                    <option value="2000" label="ok. 2000zl"></option>
-                    <option value="5000" label="ok. 5000zl"></option>
-                    <option value="8000" label="ok. 8000zl"></option>
-                    <option value="12000" label="ok. 12000zl"></option>
-                    </datalist>
+                        <label for="CPU">Wybierz CPU: 
+                            <br>AMD<input type="radio" value="amd" name="cpu">
+                            INTEL<input type="radio" value="intel" name="cpu"> 
+                        </label>
+
+                        <label for="CPU">Wybierz GPU: 
+                            <br>AMD<input type="radio" value="radeon" name="gpu">
+                            NVIDIA<input type="radio" value="nvidia" name="gpu"> 
+                        </label>
+
+
+                    </div>        
+                    
                 </fieldset>
             </fieldset>
         </form>
