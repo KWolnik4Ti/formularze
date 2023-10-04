@@ -5,18 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function showPassword() {
+            const x = document.getElementById("logpass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+    </script>
 </head>
 <body>
     <div class="formularz">
 
         <form>
-            <fieldset>
+            <fieldset class="mainfield">
                 <legend>Wygeneruj swój wymarzony komputer</legend>
                 <fieldset class="loginfield">
                     <legend>Login</legend>
+                    <label for="logmail"><input type="text" placeholder="podaj adres email" name="mail" id="logmail" required></label>
+                    <label for="logpass"><input type="password" placeholder="podaj haslo" name="password" id="logpass" required></label>
+                    <label for="showpass">Pokaz halso:<input type="checkbox" onclick="showPassword()" id="showpass"></label>
                 </fieldset>
-                <fieldset class="setup field">
+                <fieldset class="setupfield">
                     <legend>Setup</legend>
+                    <label for="priceId">Wybierz ile mniej więcej chcesz wydać na komputer:</label><br/>
+                    <input type="range" id="priceId" name="price" list="values" />
+
+                    <datalist id="values">
+                    <option value="1000" label="ok. 1000zl"></option>
+                    <option value="2000" label="ok. 2000zl"></option>
+                    <option value="5000" label="ok. 5000zl"></option>
+                    <option value="8000" label="ok. 8000zl"></option>
+                    <option value="12000" label="ok. 12000zl"></option>
+                    </datalist>
                 </fieldset>
             </fieldset>
         </form>
