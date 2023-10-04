@@ -27,7 +27,7 @@
                     <legend>Login</legend>
                     <label for="logmail"><input type="text" placeholder="podaj adres email" name="mail" id="logmail" required></label>
                     <label for="logpass"><input type="password" placeholder="podaj haslo" name="password" id="logpass" required></label>
-                    <label for="showpass">Pokaz halso:<input type="checkbox" onclick="showPassword()" id="showpass"></label>
+                    <label for="showpass">Pokaz halso:<input type="checkbox" onclick="showPassword()" id="showpass"> <input type="submit" value="Zaloguj" name="zaloguj"></label>
                 </fieldset>
                 <fieldset class="setupfield">
                     <legend>Setup</legend>
@@ -86,11 +86,45 @@
                             NVIDIA<input type="radio" value="nvidia" name="gpu"> 
                         </label>
 
+                        <label for="motherboard">Wybierz pamiec RAM: 
+                            <select name="boardtype" id="motherboard">
+                                <option value="6">ram 1</option>
+                                <option value="7">ram 2</option>
+                                <option value="8">ram 3</option>
+                                <option value="9">ram 4</option>
+                                <option value="10">ram 5</option>
+                            </select>
+                        </label>
+
+                        <label for="motherboard">Wybierz dysk twardy: 
+                            <select name="boardtype" id="motherboard">
+                                <option value="6">dysk 1</option>
+                                <option value="7">dysk 2</option>
+                                <option value="8">dysk 3</option>
+                                <option value="9">dysk 4</option>
+                                <option value="10">dysk 5</option>
+                            </select>
+                        </label>
+
 
                     </div>        
-                    
+                    <div class="peryferia">
+                        <label for="myszka">
+                            Napisz jaka chcesz myszkę do zestawu<input type="text">
+                            <input type="submit" value="Zatwierdz" name="myszka">
+                        </label>
+                        <label for="klawa">
+                            Napisz jaka chcesz klawe do zestawu<input type="text">
+                            <input type="submit" value="Zatwierdz" name="klawa">
+                        </label>
+                        <label for="monitor">
+                            Napisz jaki chcesz monitor do zestawu<input type="text">
+                            <input type="submit" value="Zatwierdz" name="monitor">
+                        </label>
+                    </div>
                 </fieldset>
             </fieldset>
+            <input type="submit" value="Generuj" id="generuj">
         </form>
 
     </div>

@@ -44,6 +44,17 @@ body {
     margin-bottom: 5px;
 }
 
+.peryferia {
+    display: flex;
+    flex-direction: column;
+}
+
+.peryferia>label>input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
 datalist {
     display: flex;
     flex-direction: column;
